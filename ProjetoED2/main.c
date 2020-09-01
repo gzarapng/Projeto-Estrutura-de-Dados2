@@ -6,7 +6,7 @@
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-    int opcaosort, opcaoNvet;
+    int opcaosort, len, *v;
     printf("Organização de vetores usando sorts - DEFININDO A COMPLEXIDADE\n\n\n"
             "Escolha o sort que deseja usar para organizar seu vetor:\n"
             "1- Merge Sort\n"
@@ -19,43 +19,59 @@ int main()
             "8 -Bubble Sort\n"
             "9- Radix Sort\n"
             "10- Heap Sort\n"
-            "11- \n"
+            "11- Shell Sort\n"
             "Sua opção: ");
     switch (opcaosort)
     {
     case 1:
-        void mergeSort(int arr[], int l, int r);
+        //len = tamanho do vetor em todos os casos, agora antes de chamar o sort só falta a func q cria o vetor dale
+        len = submenu();
+        mergeSort(int arr[], int l, int r);
         break;
     case 2:
-        void bead_sort(int *a, int len);
+        len = submenu();
+        bead_sort(*v, len);
         break;
     case 3:
-        void counting_sort(int a[],int n,int max);
+        len = submenu();
+        counting_sort(int a[],int n,int max);
         break;
     case 4:
-        void quick_sort(int vetor[], int ini, int fim);
+        len = submenu();
+        quick_sort(int vetor[], int ini, int fim);
         break;
     case 5:
-        void insertionSort(int a[], int beg, int end); 
-
+        len = submenu();
+        insertionSort(*v, 0, len); 
         break;
     case 6:
-        void timSort(int a[], int n);
+        len = submenu();
+        timSort(int a[], int n);
         break;
     case 7:
-        void Ordena_selectionSort(int *v, int n);
+        len = submenu();
+        *v = /*func da elo*/;
+        selectionSort(*v, len);
         break;
     case 8:
-        void Ordena_bubbleSort(int *v, int n);
+        len = submenu();
+        *v = /*func da elo*/;
+        bubbleSort(*v, len);
         break;
     case 9:
-        void radixsort(int vetor[], int tamanho);
+        len = submenu();
+        *v = /*func da elo*/;
+        radixsort(*v, len);
         break;
     case 10:
-        void HeapSort(int *V, int n);
+        len = submenu();
+        *v = /*func da elo*/;
+        HeapSort(*v, len);
         break;
     case 11:
-        void shellSort(int *vet, int size);
+        len = submenu();
+        *v = /*func da elo*/;
+        shellSort(*v, len);
         break;
     
     default:

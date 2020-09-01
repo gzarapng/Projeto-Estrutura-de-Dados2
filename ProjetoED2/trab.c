@@ -2,6 +2,45 @@
 #include<stdlib.h>
 #include<stdio.h>
 
+//FUNÇÃO QUE VAI FAZER O SUBMENU QUE PEDE PRA ESCOLHER O NUMERO DE ELEMENTOS NO VETOR
+int submenu(){
+    int opcao;
+    printf("Organização de vetores usando sorts - DEFININDO A COMPLEXIDADE\n\n\n"
+            "Escolha o número de elementos que deseja dentro do seu vetor:\n"
+            "1- 1.000\n"
+            "2- 5.000\n"
+            "3- 10.000\n"
+            "4- 20.000\n"
+            "5- 50.000\n"
+            "6- 100.000\n"
+            "Sua opção: ");
+    switch (opcao)
+    {
+    case 1:
+        return 1000;
+        break;
+    case 2:
+        return 5000;
+        break;
+    case 3:
+        return 10000;
+        break;
+    case 4:
+        return 20000;
+        break;
+    case 5:
+        return 50000;
+        break;
+    case 6:
+        return 100000;
+        break;
+    default: printf("\n            que?                  \n");
+        break;
+    }
+}
+
+
+
 // Merges two subarrays of arr[].
 // First subarray is arr[l..m]
 // Second subarray is arr[m+1..r]
