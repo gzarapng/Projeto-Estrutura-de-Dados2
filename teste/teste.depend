@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1599157509 source:c:\users\biahs\onedrive\Área de trabalho\faculdade\ed2\teste\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<time.h>
+	"trab.h"
+
+1599107341 c:\users\biahs\onedrive\Área de trabalho\faculdade\ed2\teste\trab.h
+
+1599157509 source:c:\users\biahs\onedrive\Área de trabalho\faculdade\ed2\teste\trab.c
+	<stdlib.h>
+	<stdio.h>
+	<locale.h>
+	"trab.h"
+
