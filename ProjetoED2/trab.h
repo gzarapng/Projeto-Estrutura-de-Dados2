@@ -1,28 +1,30 @@
-void mergeSort(int arr[], int l, int r);
+int submenu();
 
-void bead_sort(int *a, int len);
+void exibirOrdenado(int *vet, int len); /* ok */
 
-void counting_sort(int a[],int n,int max);
+/*verificar erro*/
+void mergeSort(int *v, int l, int len);
 
-void quick_sort(int vetor[], int ini, int fim);
+void bead_sort(int *a, int len);/* ok */
 
+int calc_max(int *v, int len);
 
-// já fiz
-void insertionSort(int a[], int beg, int end); 
+void countingSort(int *v, int len);/* erro */
 
-void timSort(int a[], int n);
+void quick_sort(int *v, int ini, int len);/* ok */
 
-// já fiz
-void selectionSort(int *v, int len);
+void insertion_Sort(int *v, int beg, int len);/* ok */
 
-// já fiz
-void bubbleSort(int *v, int len);
+void timSort(int *v, int len);/* ok */
 
-// já fiz
-void radixsort(int *v, int len);
+void selectionSort(int *v, int len);/* ok */
 
-// vou fazer
-void HeapSort(int *V, int n);
+void bubbleSort(int *v, int len);/* ok */
 
-// vou fazer
-void shellSort(int *vet, int size);
+void radixsort(int *v, int len);/* ok */
+
+void HeapSort(int *V, int len);/* ok */
+
+void shellSort(int *v, int len);/* ok */
+
+void countingSort(int *v, int len);
