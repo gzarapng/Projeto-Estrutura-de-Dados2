@@ -5,7 +5,7 @@
 
 int submenu(){
     int opcao;
-    printf("Escolha o número de elementos que deseja dentro do seu vetor:\n"
+    printf("Escolha o nï¿½mero de elementos que deseja dentro do seu vetor:\n"
             "1- 1.000\n"
             "2- 5.000\n"
             "3- 10.000\n"
@@ -13,7 +13,7 @@ int submenu(){
             "5- 50.000\n"
             "6- 100.000\n"
             "7- 10\n"
-            "Sua opção: ");
+            "Sua opï¿½ï¿½o: ");
             scanf("%d", &opcao);
     switch (opcao)
     {
@@ -51,6 +51,14 @@ void exibirOrdenado(int *vet, int len){
 }
 
 
+void printArray(int *v, int len)
+{
+	int i;
+	for (i=0; i < len; i++)
+		printf("%d ", v[i]);
+	printf("\n");
+}
+
 void merge(int *v, int l, int m, int len)
 {
 	int i, j, k;
@@ -70,6 +78,7 @@ void merge(int *v, int l, int m, int len)
 	i = 0;
 	j = 0;
 	k = l;
+
 
 	while (i < n1 && j < n2)
 	{
@@ -102,6 +111,7 @@ void merge(int *v, int l, int m, int len)
 		j++;
 		k++;
 	}
+	
 }
 
 
@@ -118,6 +128,8 @@ void mergeSort(int *v, int l, int len){
 
 		merge(v, l, m, len);
 	}
+	
+
 }
 
 

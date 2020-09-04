@@ -28,3 +28,5 @@ void HeapSort(int *V, int len);/* ok */
 void shellSort(int *v, int len);/* ok */
 
 void countingSort(int *v, int len);
+
+void printArray(int *v, int len);

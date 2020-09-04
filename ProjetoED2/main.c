@@ -12,7 +12,7 @@ int main()
     int opcaosort, len;
 	int *arrayToSort;
 
-    printf("Organização de vetores usando sorts - DEFININDO A COMPLEXIDADE\n\n\n"
+    printf("Organizaï¿½ï¿½o de vetores usando sorts - DEFININDO A COMPLEXIDADE\n\n\n"
             "Escolha o sort que deseja usar para organizar seu vetor:\n"
             "1- Merge Sort\n"
             "2- Bead Sort\n"
@@ -25,7 +25,7 @@ int main()
             "9- Radix Sort\n"
             "10- Heap Sort\n"
             "11- Shell Sort\n"
-            "Sua opção: ");
+            "Sua opï¿½ï¿½o: ");
             scanf("%d", &opcaosort);
 
     switch (opcaosort){
@@ -34,16 +34,16 @@ int main()
         case 1:
             len = submenu();
             arrayToSort = setArrayElements(len);
-            mergeSort(arrayToSort, 0, len);
+            mergeSort(arrayToSort, 0, len-1);
             printf("Com Merge Sort\n");
-            exibirOrdenado(arrayToSort, len);
+            printArray(arrayToSort, len);
             break;
         case 2:
             len = submenu();
 			arrayToSort = setArrayElements(len);
             bead_sort(arrayToSort, len);
             printf("Com Bead Sort\n");
-            exibirOrdenado(arrayToSort, len);
+            printArray(arrayToSort, len);
 
             break;
         case 3:
@@ -130,7 +130,7 @@ int *setArrayElements(int length) {
 		printf("%d\n", numbersArray[i]);
 	}
 
-    return numbersArray; /*retorna endereço do array*/
+    return numbersArray; /*retorna endereï¿½o do array*/
 }
 
 
